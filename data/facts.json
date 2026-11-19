@@ -1,6 +1,79 @@
 [
-  {"fact_kind": "payment", "contract": "C-1", "amount": 500000, "project": "PR-1"},
-  {"fact_kind": "package", "package": "PK-1", "project": "PR-1", "region": "north"},
-  {"fact_kind": "asset_acceptance", "asset": "AS-1", "package": "PK-1", "accepted_at": "2026-04-30"},
-  {"fact_kind": "asset_acceptance", "asset": "AS-2", "package": "PK-1", "accepted_at": null}
+ {
+  "fact_kind": "payment",
+  "payment_id": "P-1",
+  "contract_id": "C-1",
+  "amount": 500000,
+  "currency": "CNY",
+  "confirmed_at": "2026-04-15"
+ },
+ {
+  "fact_kind": "payment",
+  "payment_id": "P-2",
+  "contract_id": "C-2",
+  "amount": 180000,
+  "currency": "CNY",
+  "confirmed_at": "2026-05-20"
+ },
+ {
+  "fact_kind": "payment",
+  "payment_id": "P-3",
+  "contract_id": "C-3",
+  "amount": 90000,
+  "currency": "CNY",
+  "status": "pending"
+ },
+ {
+  "fact_kind": "allocation",
+  "allocation_id": "A-1",
+  "contract_id": "C-1",
+  "package_id": "PK-1",
+  "ratio": 0.6,
+  "evidence": "联合采购协议 2026-01 第 4 条",
+  "effective_at": "2026-02-01"
+ },
+ {
+  "fact_kind": "allocation",
+  "allocation_id": "A-2",
+  "contract_id": "C-1",
+  "package_id": "PK-2",
+  "ratio": 0.4,
+  "evidence": "联合采购协议 2026-01 第 4 条",
+  "effective_at": "2026-02-01"
+ },
+ {
+  "fact_kind": "package",
+  "package_id": "PK-1",
+  "project_id": "PR-1",
+  "region_id": "north",
+  "status": "completed",
+  "completed_at": "2026-04-20"
+ },
+ {
+  "fact_kind": "package",
+  "package_id": "PK-2",
+  "project_id": "PR-1",
+  "region_id": "south",
+  "status": "in_progress"
+ },
+ {
+  "fact_kind": "asset_acceptance",
+  "asset_id": "AS-1",
+  "package_id": "PK-1",
+  "status": "accepted",
+  "accepted_at": "2026-04-30"
+ },
+ {
+  "fact_kind": "asset_acceptance",
+  "asset_id": "AS-2",
+  "package_id": "PK-1",
+  "status": "pending"
+ },
+ {
+  "fact_kind": "asset_acceptance",
+  "asset_id": "AS-3",
+  "package_id": "PK-2",
+  "status": "accepted",
+  "accepted_at": "2026-06-10"
+ }
 ]
