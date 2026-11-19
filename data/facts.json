@@ -1,0 +1,6 @@
+[
+  {"fact_kind": "payment", "contract": "C-1", "amount": 500000, "project": "PR-1"},
+  {"fact_kind": "package", "package": "PK-1", "project": "PR-1", "region": "north"},
+  {"fact_kind": "asset_acceptance", "asset": "AS-1", "package": "PK-1", "accepted_at": "2026-04-30"},
+  {"fact_kind": "asset_acceptance", "asset": "AS-2", "package": "PK-1", "accepted_at": null}
+]
